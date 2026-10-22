@@ -1,0 +1,25 @@
+<header class="site-header">
+  <nav class="navigation" aria-label="Navegacion principal">
+    <a class="brand" [routerLink]="['/']" routerLinkActive="brand-active"
+      [routerLinkActiveOptions]="{ exact: true }">
+      <span class="brand-mark">CM</span>
+      <span>Comercio Modelos</span>
+    </a>
+
+    <div class="nav-links">
+      <a [routerLink]="['/']" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <span class="nav-icon">01</span>
+        <span>Inicio</span>
+      </a>
+      <a [routerLink]="['/listaproductos']" routerLinkActive="active">
+        <span class="nav-icon">02</span>
+        <span>Productos</span>
+      </a>
+      <a [routerLink]="['/padrecoches']" routerLinkActive="active">
+        <span class="nav-icon">03</span>
+        <span>Coches</span>
+      </a>
+    </div>
+  </nav>
+</header>

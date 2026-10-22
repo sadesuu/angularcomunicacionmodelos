@@ -1,1 +1,10 @@
-<p>lista-productos-components works!</p>
+<h1>Lista de Productos</h1>
+<h2>{{productos.nombre}}</h2>
+<img src={{productos.imagen}} alt="">
+<h2>Tiene un precio de {{productos.precio}}</h2>
+
+@for (prod of listaProductos; track prod) {
+    <h2>{{prod.nombre}}</h2>
+    <img src={{prod.imagen}} alt="">
+    <h2>{{prod.precio}}</h2>
+}

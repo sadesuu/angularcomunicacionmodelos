@@ -1,0 +1,64 @@
+.numeros {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    color: #172033;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    border-radius: 24px;
+}
+
+.cabecera {
+    text-align: center;
+}
+
+.cabecera h1 {
+    margin: 0.25rem 0;
+    font-size: 2.2rem;
+}
+
+.cabecera p {
+    color: #64748b;
+}
+
+.etiqueta {
+    margin: 0;
+    color: #4f46e5 !important;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.resumen {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.resumen div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+}
+
+.resumen span {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.resumen strong {
+    color: #4f46e5;
+    font-size: 1.6rem;
+}
+
+.lista-numeros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}

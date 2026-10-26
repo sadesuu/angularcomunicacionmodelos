@@ -9,7 +9,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class DeportesComponent {
   @Input() sport!: string
   @Output() seleccionarFavoritoPadre: EventEmitter<string> = new EventEmitter<string>()
-   public msg!: string
+  public msg!: string
 
   mostrarFavorito():void{
     this.seleccionarFavoritoPadre.emit(this.sport)

@@ -1,0 +1,27 @@
+<section class="numeros">
+    <header class="cabecera">
+        <p class="etiqueta">Comunicación padre-hijo</p>
+        <h1>Mis números</h1>
+        <p>Selecciona un número para enviarlo desde el hijo al padre.</p>
+    </header>
+
+    <div class="resumen">
+        <div>
+            <span>Último número recibido</span>
+            <strong>{{ ultimoNumero ?? '—' }}</strong>
+        </div>
+        <div>
+            <span>Suma de números enviados</span>
+            <strong>{{ suma }}</strong>
+        </div>
+    </div>
+
+    <div class="lista-numeros">
+        @for (num of numeros; track $index) {
+            <app-numeros-component
+                [numero]="num"
+                (sumarNumero)="sumarNumeroPadre($event)">
+            </app-numeros-component>
+        }
+    </div>
+</section>

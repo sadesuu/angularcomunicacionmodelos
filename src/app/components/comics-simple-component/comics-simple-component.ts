@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Comic from '../models/Comic';
+import Comic from '../../models/Comic';
 
 @Component({
   selector: 'app-comics-simple-component',
